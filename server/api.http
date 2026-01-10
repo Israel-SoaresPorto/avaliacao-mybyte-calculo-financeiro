@@ -1,0 +1,30 @@
+@baseUrl = http://localhost:3000
+
+###
+POST {{baseUrl}}/juros-simples
+Content-Type: application/json
+
+{
+  "capital_inicial": 10000,
+  "taxa_juros": 0.03,
+  "tempo": 12
+}
+###
+POST {{baseUrl}}/juros-composto
+Content-Type: application/json
+
+{
+  "capital_inicial": 1000,
+  "taxa_juros": 0.08,
+  "tempo": 12
+}
+###
+POST {{baseUrl}}/valor-presente
+Content-Type: application/json
+
+{
+  "valor_futuro": 10000,
+  "taxa_juros": 0.03,
+  "tempo": 12
+}
+###
