@@ -12,7 +12,7 @@ const initialFromState: InitialFormState<ValorPresenteResponse> = {
   data: null,
 };
 
-export default function JurosSimplesPage() {
+export default function ValorPresentePage() {
   const [state, formAction, pending] = useActionState(
     ValorPresenteAction,
     initialFromState
